@@ -1,0 +1,8 @@
+version: '3'
+services:
+  miner:
+    image: 'ethereum/client-go'
+    #command: 'bash'
+    entrypoint: '/bin/sh' # total hack to get it running without running `geth`
+    tty: true
+
